@@ -1,0 +1,6 @@
+body {
+    background-image: url("../img/popcorn.jpg");
+    background-size: cover; 
+    font-size: 50px;
+    font-weight: 500;
+}
