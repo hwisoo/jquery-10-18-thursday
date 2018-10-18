@@ -1,17 +1,29 @@
 $(function() {
-    $("form#form").submit(function() {
-    var choice = $("input#animal").val();
-      alert(choice);
+    $("form#add").submit(function() {
+    var age = $("input#add1").val();
 
-    /* if (age >= 18) {
+    if (age) {
+
+      if (age >= 18) {
       $("#adult").show();
       $("#underage").hide();
-    } else {
+
+    } else if (age < 18) {
       $("#underage").show();
       $("#adult").hide();
-    }    */
-    //event.preventDefault();
+
+    }};
+    
+    if (!age) {
+    alert("Please enter age!")
+    }
+
+    event.preventDefault();
+
     });
+   
+
+ 
 });
 
  
